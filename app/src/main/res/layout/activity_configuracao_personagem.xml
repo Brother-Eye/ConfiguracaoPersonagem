@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ConfiguracaoPersonagemActivity">
+
+    <TextView
+        style="@style/label_cadastro"
+        android:text="Meu Personagem"
+        android:gravity="center"
+        android:textSize="24sp"/>
+
+    <TextView
+        style="@style/label_cadastro"
+        android:text="Nome do Personagem"/>
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Qual o Nome do Personagem"/>
+
+    <TextView
+        style="@style/label_cadastro"
+        android:text="Classe"/>
+
+    <Spinner
+        android:id="@+id/spClasse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/classes">
+
+    </Spinner>
+
+    <TextView
+        style="@style/label_cadastro"
+        android:text="Sexo"/>
+
+    <RadioGroup
+        android:id="@+id/rgSexo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbMasculino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Masculino"/>
+        <RadioButton
+            android:id="@+id/rbFeminino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Feminino"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btJogar"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jogar"/>
+
+</LinearLayout>
